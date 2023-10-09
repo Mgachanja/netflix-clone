@@ -1,8 +1,8 @@
 .navbar{
-    display: flex;
-    flex-direction: row;
-    
+position: fixed; 
+top: 0;   
 }
+
 .navbar-left img{
  position:fixed;
  top:20px;
@@ -12,8 +12,10 @@
  border-radius: 50px;
  z-index: 20;
 }
-.navbar-right img{
- position: fixed;
+
+.navSliderClosed img,
+.navSliderOpen img{
+ position:absolute;
  border-radius: 50px;
  height:70px;
  width: 70px;
@@ -26,14 +28,25 @@
     list-style: none;
     position: fixed;
     width: 350px;
+    left:0;
     background-color: black;
     z-index: 20;
+    transition: left 0.5s ease-out;
 }
 
 .navSliderClosed{
-    display:none;
+    padding-top: 150px;
+    text-decoration: none;
+    height:100%;
+    list-style: none;
+    position: fixed;
+    width: 350px;
+    background-color: black;
+    left: -350px;
+    transition: all 0.15s ease-out;
 }
 
+.navSliderClosed a,
 .navSliderOpen a{
     padding:30px 0px 15px 15px;
     border-style: solid;
@@ -47,15 +60,14 @@
     font-size: 165%;
     text-decoration: none;
     z-index: 10;
-
 }
 .navSliderOpen a:hover{
     color: rgb(238, 142, 142);
 }
 
 .navCloser{
-    cursor: pointer;
     position:absolute;
+    
     margin-left: 20px;
     padding:10px 50px;
     font-size: x-large;
