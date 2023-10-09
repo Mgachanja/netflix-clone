@@ -13,17 +13,19 @@ function Navbar() {
         <div className='navbar-left'>
             <img src={`${netflixText}`} onClick={ShowSideNav}></img>
             <div className={SideMenu?'navSliderOpen':'navSliderClosed'}>
+            <img src ={`${userIcon}`}></img>
+            <h2 className='userName'>GACHANJA</h2>
               <Link to ='/home'>Home</Link>
               <Link to ='/search'>Search</Link>
               <Link to ='/trending'>Trending</Link>
               <Link to ='/movies'>Movies</Link>
               <Link to ='/tv-shows'>Tv-Shows</Link>
               <Link to ='/my-list'>My List</Link>
+              <button className='navCloser' onClick={ShowSideNav}>close</button>
             </div>
 
         </div>
         <div className='navbar-right'>
-            <img src ={`${userIcon}`}></img>
         </div>
      </div>
     </div>
