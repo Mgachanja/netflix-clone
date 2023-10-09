@@ -1,0 +1,16 @@
+.posterRows{
+    height:500px;
+    width: 350px;
+    margin-right: 10px;
+}
+
+.posterRows img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posterRows:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}

@@ -1,0 +1,37 @@
+.homePage{
+    background-color: #000000;
+}
+
+.movieRowList ,
+.Trending,
+.topRated{
+    position:relative;
+    top:800%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+ ::-webkit-scrollbar{
+    width: 10px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.firstTitle{
+    position: absolute;
+    color: aliceblue;
+    top:79%;
+}
+
+.Title{
+    color: aliceblue;
+    font-size: x-large;
+    padding-left: 20px;
+}
