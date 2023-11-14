@@ -11,9 +11,9 @@ function Navbar() {
     <div className='navbar'>
      <div className='logo'>
         <div className='navbar-left'>
-            <img src={`${netflixText}`} onClick={ShowSideNav}></img>
+            <img src={`${netflixText}`} onClick={ShowSideNav} alt=''></img>
             <div className={SideMenu?'navSliderOpen':'navSliderClosed'}>
-            <img src ={`${userIcon}`}></img>
+            <img src ={`${userIcon}`} alt =''></img>
             <h2 className='userName'>GACHANJA</h2>
               <Link to ='/home'>Home</Link>
               <Link to ='/search'>Search</Link>

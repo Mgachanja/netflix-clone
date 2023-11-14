@@ -8,6 +8,7 @@ import Trending from '../src/pages/Trending'
 import Movies from '../src/pages/Movies'
 import TvShows from './pages/TvShows'
 import MyList from './pages/MyList'
+
 function App() {
 
   return (
